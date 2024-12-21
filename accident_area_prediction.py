@@ -2,10 +2,22 @@ import torch
 import cv2
 import numpy as np
 
-def detect_accident_prone_vehicles(video_path, output_path):
-    # Load YOLOv5 model
-    model_path = './yolov5/runs/train/exp6/weights/best.pt'
+# Load custom-trained YOLOv5 model
+def load_model(model_path='./yolov5/runs/train/exp6/weights/best.pt'):
+    # Load custom YOLOv5 model using the Ultralytics YOLO API
     model = torch.hub.load('ultralytics/yolov5', 'custom', path=model_path)
+    return model
+
+def detect_accident_prone_vehicles(video_path, output_path):
+    """
+    Detect accident-prone vehicles based on their speed and position in the video.
+    
+    Args:
+        video_path (str): Path to the input video.
+        output_path (str): Path to save the output annotated video.
+    """
+    # Load the custom YOLOv5 model
+    model = load_model()
 
     # Open video
     cap = cv2.VideoCapture(video_path)
