@@ -1,5 +1,7 @@
-torch==2.2.1  # Use the latest available version (2.x series)
-opencv-python==4.10.0
-streamlit==1.41.1  # Streamlit version from logs (or keep the version you're using)
-tensorflow==2.13.0
-numpy==1.25.0
+setuptools
+wheel
+numpy==1.26.0
+torch==2.2.0
+opencv-python-headless==4.8.0.76
+ultralytics==8.0.23
+streamlit==1.41.1
