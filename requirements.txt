@@ -1,5 +1,5 @@
 torch==2.2.1  # Or another compatible version with your setup
-opencv-python-headless==4.8.0.74  # Headless version is more stable in cloud environments
+opencv-python-headless==4.6.0.66  # A more stable version
 streamlit==1.20.0  # Ensure Streamlit is up to date
 pandas==1.5.3  # If using pandas in your project
 numpy==1.23.4  # Ensure numpy is compatible
