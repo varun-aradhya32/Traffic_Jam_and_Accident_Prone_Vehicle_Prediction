@@ -1,7 +1,5 @@
-setuptools
-wheel
-numpy==1.26.0
-torch==2.2.0
-opencv-python-headless==4.8.0.76
-ultralytics==8.0.23
-streamlit==1.41.1
+torch==2.2.1  # Or another compatible version with your setup
+opencv-python-headless==4.8.0.74  # Headless version is more stable in cloud environments
+streamlit==1.20.0  # Ensure Streamlit is up to date
+pandas==1.5.3  # If using pandas in your project
+numpy==1.23.4  # Ensure numpy is compatible
