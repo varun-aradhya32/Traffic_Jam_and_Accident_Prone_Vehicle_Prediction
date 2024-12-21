@@ -1,0 +1,5 @@
+torch==1.13.1         # or another version, depending on your needs
+opencv-python==4.10.0
+streamlit==1.25.0
+tensorflow==2.13.0
+numpy==1.25.0
