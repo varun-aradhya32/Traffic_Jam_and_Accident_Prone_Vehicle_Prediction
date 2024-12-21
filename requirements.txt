@@ -1,5 +1,5 @@
-torch==1.13.1         # or another version, depending on your needs
+torch==2.3.0  # Use the latest available version (2.x series)
 opencv-python==4.10.0
-streamlit==1.25.0
+streamlit==1.41.1  # Streamlit version from logs (or keep the version you're using)
 tensorflow==2.13.0
 numpy==1.25.0
